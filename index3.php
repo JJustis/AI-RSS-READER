@@ -378,12 +378,17 @@
         }
 
         this.feeds = data.feeds || [];
-        
-        const batchSize = 5;
-        for (let i = 0; i < this.feeds.length; i += batchSize) {
-            const batch = this.feeds.slice(i, i + batchSize);
-            await this.processContentBatch(batch, i, this.feeds.length);
-        }
+    this.trainingData = this.feeds.map(feed => ({
+      content: `${feed.title}\n\n${feed.content}`,
+      category: feed.category,
+      source: feed.source
+    }));
+
+    const batchSize = 5;
+    for (let i = 0; i < this.feeds.length; i += batchSize) {
+        const batch = this.feeds.slice(i, i + batchSize);
+        await this.processContentBatch(batch, i, this.feeds.length);
+    }
 
         this.displayFeeds();
         if (data.stats) this.displayStats(data.stats);
@@ -554,26 +559,29 @@ async processContentBatch(batch, current, total) {
             }
 
             displayFeeds() {
-                const container = document.getElementById('feedContent');
-                if (!container) return;
+    const container = document.getElementById('feedContent');
+    if (!container) return;
 
-                container.innerHTML = this.feeds.map(feed => `
-                    <div class="feed-item">
-                        <div class="feed-header">
-                            <span class="feed-source">${feed.source}</span>
-                            <span class="feed-category">${feed.category || 'General'}</span>
-                        </div>
-                        <h3>${feed.title}</h3>
-                        <p>${feed.content}</p>
-                        <div class="feed-stats">
-                            <span class="stat-badge">
-                                <i class="far fa-clock"></i> 
-                                ${new Date(feed.pubDate).toLocaleDateString()}
-                            </span>
-                        </div>
-                    </div>
-                `).join('');
-            }
+    container.innerHTML = this.feeds.map(feed => `
+        <div class="feed-item">
+            <div class="feed-header">
+                <span class="feed-source">${feed.source}</span>
+                <span class="feed-category">${feed.category || 'General'}</span>
+            </div>
+            <h3>${feed.title}</h3>
+            <p>${feed.content}</p>
+            <a href="${feed.link}" target="_blank" class="fancy-button mt-2">
+              <i class="fas fa-book-reader"></i> Read More
+            </a>
+            <div class="feed-stats">
+                <span class="stat-badge">
+                    <i class="far fa-clock"></i> 
+                    ${new Date(feed.pubDate).toLocaleDateString()}
+                </span>
+            </div>
+        </div>
+    `).join('');
+}
 
             displayStats(stats) {
                 const container = document.querySelector('.stats-grid');

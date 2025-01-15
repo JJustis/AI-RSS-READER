@@ -10,115 +10,122 @@ class EnhancedRSSDiscoverer {
 private function getKnownFeeds() {
     return [
         // News
-        [
-            'url' => 'http://rss.cnn.com/rss/cnn_topstories.rss',
-            'category' => 'news',
-            'name' => 'CNN Top Stories'
-        ],
-        [
-            'url' => 'https://feeds.bbci.co.uk/news/rss.xml',
-            'category' => 'news',
-            'name' => 'BBC News'
-        ],
-        [
-            'url' => 'https://feeds.reuters.com/reuters/topNews',
-            'category' => 'news',
-            'name' => 'Reuters Top News'
-        ],
-        
+        ['url' => 'http://rss.cnn.com/rss/cnn_topstories.rss', 'category' => 'news', 'name' => 'CNN Top Stories'],
+        ['url' => 'https://feeds.bbci.co.uk/news/rss.xml', 'category' => 'news', 'name' => 'BBC News'],
+        ['url' => 'https://feeds.reuters.com/reuters/topNews', 'category' => 'news', 'name' => 'Reuters Top News'],
+        ['url' => 'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml', 'category' => 'news', 'name' => 'The New York Times'],
+        ['url' => 'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml', 'category' => 'news', 'name' => 'The Wall Street Journal'],
+
         // Technology
-        [
-            'url' => 'http://rss.cnn.com/rss/cnn_tech.rss',
-            'category' => 'technology',
-            'name' => 'CNN Technology'
-        ],
-        [
-            'url' => 'https://feeds.feedburner.com/TechCrunch',
-            'category' => 'technology',
-            'name' => 'TechCrunch'
-        ],
-        [
-            'url' => 'https://www.wired.com/feed/rss',
-            'category' => 'technology',
-            'name' => 'Wired'
-        ],
-        [
-            'url' => 'https://www.theverge.com/rss/index.xml',
-            'category' => 'technology',
-            'name' => 'The Verge'
-        ],
-        
+        ['url' => 'http://rss.cnn.com/rss/cnn_tech.rss', 'category' => 'technology', 'name' => 'CNN Technology'],
+        ['url' => 'https://feeds.feedburner.com/TechCrunch', 'category' => 'technology', 'name' => 'TechCrunch'],
+        ['url' => 'https://www.wired.com/feed/rss', 'category' => 'technology', 'name' => 'Wired'],
+        ['url' => 'https://www.theverge.com/rss/index.xml', 'category' => 'technology', 'name' => 'The Verge'],
+        ['url' => 'https://www.engadget.com/rss.xml', 'category' => 'technology', 'name' => 'Engadget'],
+        ['url' => 'https://gizmodo.com/rss', 'category' => 'technology', 'name' => 'Gizmodo'],
+
         // Science
-        [
-            'url' => 'https://www.sciencedaily.com/rss/all.xml',
-            'category' => 'science',
-            'name' => 'Science Daily'
-        ],
-        [
-            'url' => 'https://www.nature.com/nature.rss',
-            'category' => 'science',
-            'name' => 'Nature'
-        ],
+        ['url' => 'https://www.sciencedaily.com/rss/all.xml', 'category' => 'science', 'name' => 'Science Daily'],
+        ['url' => 'https://www.nature.com/nature.rss', 'category' => 'science', 'name' => 'Nature'],
+        ['url' => 'https://www.space.com/feeds/all', 'category' => 'science', 'name' => 'Space.com'],
+        ['url' => 'https://phys.org/rss-feed/', 'category' => 'science', 'name' => 'Phys.org'],
         
         // Business
-        [
-            'url' => 'https://feeds.bloomberg.com/markets/news.rss',
-            'category' => 'business',
-            'name' => 'Bloomberg Markets'
-        ],
-        [
-            'url' => 'https://www.forbes.com/innovation/feed/',
-            'category' => 'business',
-            'name' => 'Forbes Innovation'
-        ],
+        ['url' => 'https://feeds.bloomberg.com/markets/news.rss', 'category' => 'business', 'name' => 'Bloomberg Markets'],
+        ['url' => 'https://www.forbes.com/innovation/feed/', 'category' => 'business', 'name' => 'Forbes Innovation'],
+        ['url' => 'https://www.cnbc.com/id/10001147/device/rss/rss.html', 'category' => 'business', 'name' => 'CNBC Business'],
+        ['url' => 'https://www.economist.com/finance-and-economics/rss.xml', 'category' => 'business', 'name' => 'The Economist'],
         
         // Gaming
-        [
-            'url' => 'https://www.gamespot.com/feeds/news',
-            'category' => 'gaming',
-            'name' => 'GameSpot'
-        ],
-        [
-            'url' => 'https://www.ign.com/rss/articles',
-            'category' => 'gaming',
-            'name' => 'IGN'
-        ],
+        ['url' => 'https://www.gamespot.com/feeds/news', 'category' => 'gaming', 'name' => 'GameSpot'],
+        ['url' => 'https://www.ign.com/rss/articles', 'category' => 'gaming', 'name' => 'IGN'],
+        ['url' => 'https://www.polygon.com/rss/index.xml', 'category' => 'gaming', 'name' => 'Polygon'],
+        ['url' => 'https://www.eurogamer.net/?format=rss', 'category' => 'gaming', 'name' => 'Eurogamer'],
 
         // Entertainment
-        [
-            'url' => 'http://feeds.feedburner.com/variety/headlines',
-            'category' => 'entertainment',
-            'name' => 'Variety'
-        ],
-        [
-            'url' => 'https://deadline.com/feed',
-            'category' => 'entertainment',
-            'name' => 'Deadline Hollywood'
-        ],
-
+        ['url' => 'http://feeds.feedburner.com/variety/headlines', 'category' => 'entertainment', 'name' => 'Variety'],
+        ['url' => 'https://deadline.com/feed', 'category' => 'entertainment', 'name' => 'Deadline Hollywood'],
+        ['url' => 'https://www.hollywoodreporter.com/rss/', 'category' => 'entertainment', 'name' => 'The Hollywood Reporter'],
+        ['url' => 'https://ew.com/feed/', 'category' => 'entertainment', 'name' => 'Entertainment Weekly'],
+        
         // Health
-        [
-            'url' => 'https://www.medicalnewstoday.com/newsfeeds-rss',
-            'category' => 'health',
-            'name' => 'Medical News Today'
-        ],
-        [
-            'url' => 'https://www.webmd.com/rss/all.xml',
-            'category' => 'health',
-            'name' => 'WebMD'
-        ],
+        ['url' => 'https://www.medicalnewstoday.com/newsfeeds-rss', 'category' => 'health', 'name' => 'Medical News Today'],
+        ['url' => 'https://www.webmd.com/rss/all.xml', 'category' => 'health', 'name' => 'WebMD'],
+        ['url' => 'https://www.health.harvard.edu/blog/feed', 'category' => 'health', 'name' => 'Harvard Health Blog'],
+        ['url' => 'https://www.mayoclinic.org/feeds/rss-rssfeeds-0', 'category' => 'health', 'name' => 'Mayo Clinic'],
         
         // Sports
-        [
-            'url' => 'https://www.espn.com/espn/rss/news',
-            'category' => 'sports',
-            'name' => 'ESPN'
-        ],
-        [
-            'url' => 'https://api.foxsports.com/v1/rss',
-            'category' => 'sports',
-            'name' => 'Fox Sports'
-        ]
+        ['url' => 'https://www.espn.com/espn/rss/news', 'category' => 'sports', 'name' => 'ESPN'],
+        ['url' => 'https://api.foxsports.com/v1/rss', 'category' => 'sports', 'name' => 'Fox Sports'],
+        ['url' => 'https://bleacherreport.com/rss/home', 'category' => 'sports', 'name' => 'Bleacher Report'],
+        ['url' => 'https://www.cbssports.com/rss/', 'category' => 'sports', 'name' => 'CBS Sports'],
+		// Cryptocurrency
+        ['url' => 'https://cointelegraph.com/rss', 'category' => 'cryptocurrency', 'name' => 'Cointelegraph'],
+        ['url' => 'https://www.coindesk.com/feed', 'category' => 'cryptocurrency', 'name' => 'CoinDesk'],
+        ['url' => 'https://cryptonews.com/news/feed', 'category' => 'cryptocurrency', 'name' => 'CryptoNews'],
+        
+        // PubMed
+        ['url' => 'https://pubmed.ncbi.nlm.nih.gov/rss/search/1Di1IZzM0R1EGk1Xo2DmAKd3rQFcntFAmERLbq9g9ntQrD5Bx4/?limit=50&utm_campaign=pubmed-2&fc=20210112084501', 'category' => 'pubmed', 'name' => 'PubMed: Latest Research'],
+        ['url' => 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1TkfDmjf0Snf-m8QgjIlSW7zloe1ygPi_pJ7zaPNsn6q1mD-FW', 'category' => 'pubmed', 'name' => 'PubMed: Trending Articles'],
+        
+        // Bitcoin/Litecoin News
+        ['url' => 'https://bitcoinmagazine.com/.rss/full/', 'category' => 'bitcoin_litecoin', 'name' => 'Bitcoin Magazine'],
+        ['url' => 'https://litecoin.com/rss/litecoin-news.xml', 'category' => 'bitcoin_litecoin', 'name' => 'Litecoin News'],
+        ['url' => 'https://news.bitcoin.com/feed/', 'category' => 'bitcoin_litecoin', 'name' => 'Bitcoin News'],
+        
+        // Psychology
+        ['url' => 'https://www.psychologytoday.com/us/rss', 'category' => 'psychology', 'name' => 'Psychology Today'],
+        ['url' => 'https://digest.bps.org.uk/feed/', 'category' => 'psychology', 'name' => 'The British Psychological Society Research Digest'],
+        ['url' => 'https://www.scientificamerican.com/psychology/rss/', 'category' => 'psychology', 'name' => 'Scientific American Mind & Brain'],
+        
+        // Education
+        ['url' => 'https://www.edutopia.org/rss.xml', 'category' => 'education', 'name' => 'Edutopia'],
+        ['url' => 'https://www.edsurge.com/news/feed', 'category' => 'education', 'name' => 'EdSurge'],
+        ['url' => 'https://www.eschoolnews.com/feed/', 'category' => 'education', 'name' => 'eSchool News'],
+        
+        // Music
+        ['url' => 'https://pitchfork.com/rss/news', 'category' => 'music', 'name' => 'Pitchfork'],
+        ['url' => 'https://www.rollingstone.com/music.rss', 'category' => 'music', 'name' => 'Rolling Stone Music'],
+        ['url' => 'https://consequenceofsound.net/feed/', 'category' => 'music', 'name' => 'Consequence of Sound'],
+        
+        // Economics
+        ['url' => 'https://www.economist.com/economics/rss.xml', 'category' => 'economics', 'name' => 'The Economist Economics'],
+        ['url' => 'https://voxeu.org/feed/recent/rss.xml', 'category' => 'economics', 'name' => 'VoxEU'],
+        ['url' => 'https://www.nber.org/rss/new.xml', 'category' => 'economics', 'name' => 'The National Bureau of Economic Research']
+		// Politics
+        ['url' => 'https://www.politico.com/rss/politicopicks.xml', 'category' => 'politics', 'name' => 'Politico'],
+        ['url' => 'https://thehill.com/rss/syndicator/19110', 'category' => 'politics', 'name' => 'The Hill'],
+        ['url' => 'https://fivethirtyeight.com/politics/feed/', 'category' => 'politics', 'name' => 'FiveThirtyEight Politics'],
+        
+        // Environment
+        ['url' => 'https://www.nationalgeographic.com/sitemaps/rss/environment.xml', 'category' => 'environment', 'name' => 'National Geographic Environment'],
+        ['url' => 'https://www.treehugger.com/rss.xml', 'category' => 'environment', 'name' => 'Treehugger'],
+        ['url' => 'https://grist.org/feed/', 'category' => 'environment', 'name' => 'Grist'],
+        
+        // Travel
+        ['url' => 'https://www.lonelyplanet.com/news/feed/atom/', 'category' => 'travel', 'name' => 'Lonely Planet'],
+        ['url' => 'https://www.nationalgeographic.com/travel/top-10/rss.xml', 'category' => 'travel', 'name' => 'National Geographic Travel'],
+        ['url' => 'https://www.cntraveler.com/feed/rss', 'category' => 'travel', 'name' => 'Condé Nast Traveler'],
+        
+        // Food
+        ['url' => 'https://www.seriouseats.com/atom.xml', 'category' => 'food', 'name' => 'Serious Eats'],
+        ['url' => 'https://www.bonappetit.com/feed/rss', 'category' => 'food', 'name' => 'Bon Appétit'],
+        ['url' => 'https://www.epicurious.com/feed/rss', 'category' => 'food', 'name' => 'Epicurious'],
+        
+        // Art & Design
+        ['url' => 'https://www.dezeen.com/feed/', 'category' => 'art_design', 'name' => 'Dezeen'],
+        ['url' => 'https://www.designboom.com/feed/', 'category' => 'art_design', 'name' => 'designboom'],
+        ['url' => 'https://www.archdaily.com/feed', 'category' => 'art_design', 'name' => 'ArchDaily'],
+        
+        // Philosophy
+        ['url' => 'https://www.philosophynow.org/rss.xml', 'category' => 'philosophy', 'name' => 'Philosophy Now'],
+        ['url' => 'https://aeon.co/feed.rss', 'category' => 'philosophy', 'name' => 'Aeon'],
+        ['url' => 'https://iai.tv/articles/feed.rss', 'category' => 'philosophy', 'name' => 'The Institute of Art and Ideas'],
+        
+        // History
+        ['url' => 'https://www.historytoday.com/feed/rss.xml', 'category' => 'history', 'name' => 'History Today'],
+        ['url' => 'https://www.historyextra.com/feed/', 'category' => 'history', 'name' => 'BBC History Extra'],
+        ['url' => 'https://www.smithsonianmag.com/rss/history/', 'category' => 'history', 'name' => 'Smithsonian Magazine History']
     ];
 }
 
