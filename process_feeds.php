@@ -2266,7 +2266,121 @@ private function getKnownFeeds() {
 // Seattle
 ['url' => 'https://www.seattletimes.com/feed/', 'category' => 'seattle_news', 'name' => 'Seattle Times'],
 ['url' => 'https://www.thestranger.com/feed', 'category' => 'seattle_news', 'name' => 'The Stranger'],
-['url' => 'https://www.kuow.org/rss', 'category' => 'seattle_news', 'name' => 'KUOW']
+['url' => 'https://www.kuow.org/rss', 'category' => 'seattle_news', 'name' => 'KUOW'],
+// Add these to your existing getKnownFeeds() array
+
+// Ivy League News
+['url' => 'https://news.harvard.edu/gazette/feed/', 'category' => 'ivy_news', 'name' => 'Harvard Gazette'],
+['url' => 'https://yaledailynews.com/feed/', 'category' => 'ivy_news', 'name' => 'Yale Daily News'],
+['url' => 'https://www.dailyprincetonian.com/feed', 'category' => 'ivy_news', 'name' => 'Daily Princetonian'],
+['url' => 'https://cornellsun.com/feed/', 'category' => 'ivy_news', 'name' => 'Cornell Daily Sun'],
+['url' => 'https://www.columbiaspectator.com/feed/', 'category' => 'ivy_news', 'name' => 'Columbia Spectator'],
+
+// Big Ten Universities
+['url' => 'https://www.michigandaily.com/feed/', 'category' => 'big_ten_news', 'name' => 'Michigan Daily'],
+['url' => 'https://www.thelantern.com/feed/', 'category' => 'big_ten_news', 'name' => 'The Lantern (OSU)'],
+['url' => 'https://www.dailyillini.com/feed/', 'category' => 'big_ten_news', 'name' => 'Daily Illini'],
+['url' => 'https://www.wisconsinstatejournalnews.com/feed/', 'category' => 'big_ten_news', 'name' => 'Wisconsin State Journal'],
+['url' => 'https://www.mndaily.com/feed', 'category' => 'big_ten_news', 'name' => 'Minnesota Daily'],
+
+// Top Public Universities
+['url' => 'https://dailybruin.com/feed', 'category' => 'public_uni_news', 'name' => 'UCLA Daily Bruin'],
+['url' => 'https://www.dailycal.org/feed/', 'category' => 'public_uni_news', 'name' => 'UC Berkeley Daily Cal'],
+['url' => 'https://www.dailytexanonline.com/feed/', 'category' => 'public_uni_news', 'name' => 'Daily Texan'],
+['url' => 'https://www.cavalierdaily.com/feed', 'category' => 'public_uni_news', 'name' => 'UVA Cavalier Daily'],
+['url' => 'https://www.michigandaily.com/feed/', 'category' => 'public_uni_news', 'name' => 'Michigan Daily'],
+
+// Liberal Arts Colleges
+['url' => 'https://www.amherststudent.com/feed/', 'category' => 'liberal_arts_news', 'name' => 'Amherst Student'],
+['url' => 'https://www.williamsrecord.com/feed/', 'category' => 'liberal_arts_news', 'name' => 'Williams Record'],
+['url' => 'https://www.middleburycampus.com/feed/', 'category' => 'liberal_arts_news', 'name' => 'Middlebury Campus'],
+['url' => 'https://www.bowdoinorient.com/feed/', 'category' => 'liberal_arts_news', 'name' => 'Bowdoin Orient'],
+['url' => 'https://www.swarthmorephoenix.com/feed/', 'category' => 'liberal_arts_news', 'name' => 'Swarthmore Phoenix'],
+
+// Engineering Schools
+['url' => 'https://thetech.com/feed/', 'category' => 'engineering_news', 'name' => 'MIT Tech'],
+['url' => 'https://caltechnews.caltech.edu/feed', 'category' => 'engineering_news', 'name' => 'Caltech News'],
+['url' => 'https://engineering.stanford.edu/news/feed', 'category' => 'engineering_news', 'name' => 'Stanford Engineering'],
+['url' => 'https://www.georgiatechtimes.com/feed/', 'category' => 'engineering_news', 'name' => 'Georgia Tech Times'],
+['url' => 'https://www.purdue.edu/newsroom/rss/engineering.xml', 'category' => 'engineering_news', 'name' => 'Purdue Engineering'],
+
+// Business Schools
+['url' => 'https://www.hbs.edu/news/rss/', 'category' => 'business_school_news', 'name' => 'Harvard Business School'],
+['url' => 'https://www.gsb.stanford.edu/insights/feed', 'category' => 'business_school_news', 'name' => 'Stanford GSB'],
+['url' => 'https://www.wharton.upenn.edu/feed/', 'category' => 'business_school_news', 'name' => 'Wharton News'],
+['url' => 'https://mitsloan.mit.edu/feed', 'category' => 'business_school_news', 'name' => 'MIT Sloan'],
+['url' => 'https://www.chicagobooth.edu/news/rss', 'category' => 'business_school_news', 'name' => 'Chicago Booth'],
+
+// Medical Schools
+['url' => 'https://hms.harvard.edu/news/feed', 'category' => 'medical_school_news', 'name' => 'Harvard Medical'],
+['url' => 'https://med.stanford.edu/news.feed.xml', 'category' => 'medical_school_news', 'name' => 'Stanford Medicine'],
+['url' => 'https://www.hopkinsmedicine.org/news/rss.html', 'category' => 'medical_school_news', 'name' => 'Johns Hopkins Medicine'],
+['url' => 'https://www.med.upenn.edu/news/feed.html', 'category' => 'medical_school_news', 'name' => 'Penn Medicine'],
+['url' => 'https://medschool.ucla.edu/news/feed', 'category' => 'medical_school_news', 'name' => 'UCLA Medical'],
+
+// Law Schools
+['url' => 'https://today.law.harvard.edu/feed/', 'category' => 'law_school_news', 'name' => 'Harvard Law'],
+['url' => 'https://law.yale.edu/news/rss.xml', 'category' => 'law_school_news', 'name' => 'Yale Law'],
+['url' => 'https://www.law.stanford.edu/feed', 'category' => 'law_school_news', 'name' => 'Stanford Law'],
+['url' => 'https://www.law.columbia.edu/news/feed', 'category' => 'law_school_news', 'name' => 'Columbia Law'],
+['url' => 'https://www.law.uchicago.edu/rss.xml', 'category' => 'law_school_news', 'name' => 'Chicago Law'],
+// Add these to your existing getKnownFeeds() array
+
+// Arts Schools
+['url' => 'https://www.risd.edu/news/feed', 'category' => 'art_school_news', 'name' => 'RISD News'],
+['url' => 'https://www.sva.edu/feed', 'category' => 'art_school_news', 'name' => 'School of Visual Arts'],
+['url' => 'https://www.parsons.edu/news/feed/', 'category' => 'art_school_news', 'name' => 'Parsons School of Design'],
+['url' => 'https://www.pratt.edu/news/feed/', 'category' => 'art_school_news', 'name' => 'Pratt Institute'],
+['url' => 'https://www.mica.edu/feed/', 'category' => 'art_school_news', 'name' => 'Maryland Institute College of Art'],
+
+// Music Schools
+['url' => 'https://www.juilliard.edu/news/rss', 'category' => 'music_school_news', 'name' => 'Juilliard News'],
+['url' => 'https://www.berklee.edu/news/feed', 'category' => 'music_school_news', 'name' => 'Berklee News'],
+['url' => 'https://music.yale.edu/news/feed', 'category' => 'music_school_news', 'name' => 'Yale School of Music'],
+['url' => 'https://www.curtis.edu/news/feed/', 'category' => 'music_school_news', 'name' => 'Curtis Institute'],
+['url' => 'https://www.colburn.edu/news/feed/', 'category' => 'music_school_news', 'name' => 'Colburn School'],
+
+// Film Schools
+['url' => 'https://cinema.usc.edu/news/feed.cfm', 'category' => 'film_school_news', 'name' => 'USC Cinema'],
+['url' => 'https://tisch.nyu.edu/news/feed.html', 'category' => 'film_school_news', 'name' => 'NYU Tisch'],
+['url' => 'https://www.afi.com/news/rss/', 'category' => 'film_school_news', 'name' => 'AFI Conservatory'],
+['url' => 'https://www.chapman.edu/dodge/news/feed.aspx', 'category' => 'film_school_news', 'name' => 'Chapman Film'],
+['url' => 'https://www.ucla.edu/tft/news/feed', 'category' => 'film_school_news', 'name' => 'UCLA Film School'],
+
+// Research Universities
+['url' => 'https://news.mit.edu/rss/feed', 'category' => 'research_uni_news', 'name' => 'MIT News'],
+['url' => 'https://www.caltech.edu/rss/news', 'category' => 'research_uni_news', 'name' => 'Caltech News'],
+['url' => 'https://www.stanford.edu/news/feed/', 'category' => 'research_uni_news', 'name' => 'Stanford News'],
+['url' => 'https://www.berkeley.edu/news/feed', 'category' => 'research_uni_news', 'name' => 'Berkeley News'],
+['url' => 'https://news.uchicago.edu/rss', 'category' => 'research_uni_news', 'name' => 'UChicago News'],
+
+// Community Colleges
+['url' => 'https://www.santamonicacollegenews.com/feed/', 'category' => 'community_college_news', 'name' => 'Santa Monica College'],
+['url' => 'https://news.valenciacollege.edu/feed/', 'category' => 'community_college_news', 'name' => 'Valencia College'],
+['url' => 'https://www.monroecc.edu/news/feed/', 'category' => 'community_college_news', 'name' => 'Monroe Community College'],
+['url' => 'https://news.austincc.edu/feed/', 'category' => 'community_college_news', 'name' => 'Austin Community College'],
+['url' => 'https://www.kcc.edu/news/feed/', 'category' => 'community_college_news', 'name' => 'Kingsborough Community College'],
+
+// Technical Institutes
+['url' => 'https://www.rit.edu/news/feed', 'category' => 'tech_institute_news', 'name' => 'RIT News'],
+['url' => 'https://www.wpi.edu/news/feed', 'category' => 'tech_institute_news', 'name' => 'WPI News'],
+['url' => 'https://www.fit.edu/news-feed/', 'category' => 'tech_institute_news', 'name' => 'Florida Tech'],
+['url' => 'https://www.msoe.edu/news/feed/', 'category' => 'tech_institute_news', 'name' => 'Milwaukee School of Engineering'],
+['url' => 'https://www.stevens.edu/news/feed', 'category' => 'tech_institute_news', 'name' => 'Stevens Institute of Technology'],
+
+// Agricultural Schools
+['url' => 'https://www.agriculture.tamu.edu/news/feed/', 'category' => 'agriculture_school_news', 'name' => 'Texas A&M Agriculture'],
+['url' => 'https://www.caes.uga.edu/news/feed.html', 'category' => 'agriculture_school_news', 'name' => 'UGA Agriculture'],
+['url' => 'https://www.canr.msu.edu/news/feed', 'category' => 'agriculture_school_news', 'name' => 'Michigan State Agriculture'],
+['url' => 'https://cals.cornell.edu/news/feed', 'category' => 'agriculture_school_news', 'name' => 'Cornell Agriculture'],
+['url' => 'https://ag.purdue.edu/news/feed.xml', 'category' => 'agriculture_school_news', 'name' => 'Purdue Agriculture'],
+
+// Military Academies
+['url' => 'https://www.usma.edu/news/feed', 'category' => 'military_academy_news', 'name' => 'West Point News'],
+['url' => 'https://www.usna.edu/NewsCenter/feed.xml', 'category' => 'military_academy_news', 'name' => 'Naval Academy News'],
+['url' => 'https://www.usafa.edu/news/feed/', 'category' => 'military_academy_news', 'name' => 'Air Force Academy News'],
+['url' => 'https://www.usmma.edu/news/feed', 'category' => 'military_academy_news', 'name' => 'Merchant Marine Academy'],
+['url' => 'https://www.uscga.edu/news-feed/', 'category' => 'military_academy_news', 'name' => 'Coast Guard Academy']
     
     
   
