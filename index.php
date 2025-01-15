@@ -276,7 +276,9 @@
                 <h2><i class="fas fa-newspaper"></i> RSS Feeds</h2>
                 <div id="feedContent"></div>
             </div>
-            
+             <div class="panel">
+               <iframe height="600px" width="100%" src="http://jcmc.serveminecraft.net/airssreader/rsscreator.php"></iframe>
+            </div>
             <div class="panel">
                 <h2><i class="fas fa-robot"></i> AI Assistant</h2>
                 <div class="input-group">
@@ -324,33 +326,111 @@
             });
         }
     }
+                 initializeArticleCreator() {
+                const form = document.getElementById('articleCreatorForm');
+                const rssLinkEl = document.createElement('div');
+                rssLinkEl.id = 'rssLinkContainer';
+                form.parentNode.insertBefore(rssLinkEl, form.nextSibling);
 
+                // Add RSS Link button
+                const rssButton = document.createElement('button');
+                rssButton.className = 'fancy-button mt-2';
+                rssButton.innerHTML = '<i class="fas fa-rss"></i> View RSS Feed';
+                rssButton.addEventListener('click', () => {
+                    window.open('create_rss_feed.php?get_rss=1', '_blank');
+                });
+
+                if (form) {
+                    form.addEventListener('submit', async (e) => {
+                        e.preventDefault();
+                        
+                        const title = document.getElementById('articleTitle').value;
+                        const content = document.getElementById('articleContent').value;
+                        const category = document.getElementById('articleCategory').value;
+                        const source = document.getElementById('articleSource').value || 'Custom Source';
+
+                        const data = {
+                            title: title,
+                            content: content,
+                            category: category,
+                            source: source
+                        };
+
+                        console.log('Sending data:', data);
+
+                        try {
+                            const response = await fetch('create_rss_feed.php', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify(data)
+                            });
+
+                            console.log('Response status:', response.status);
+                            
+                            const result = await response.json();
+                            console.log('Response:', result);
+
+                            // Check response
+                            if (!result.success) {
+                                throw new Error(result.message || 'Unknown error');
+                            }
+
+                            // Create a new feed item
+                            const newArticle = result.data;
+
+                            // Add to existing feeds
+                            this.feeds.push(newArticle);
+
+                            // Process the new article for embeddings
+                            await this.processContentBatch([newArticle], 0, 1);
+
+                            // Display the new feeds
+                            this.displayFeeds();
+
+                            // Show success message
+                            this.showStatus('Article created and processed', 'success');
+
+                            // Add RSS link button if not already present
+                            if (!document.getElementById('rssViewButton')) {
+                                rssButton.id = 'rssViewButton';
+                                rssLinkEl.appendChild(rssButton);
+                            }
+
+                            // Reset the form
+                            form.reset();
+                        } catch (error) {
+                            console.error('Full error:', error);
+                            this.showStatus(error.message || 'Failed to create article', 'error');
+                        }
+                    });
+                }
+            }
  async initialize() {
-        try {
-            // Pre-warm the model
-            this.updateModelStatus('Loading AI Model...');
-            const modelPromise = use.load();
-            
-            // Add timeout for model loading
-            const timeoutPromise = new Promise((_, reject) => {
-                setTimeout(() => reject(new Error('Model loading timeout')), 100000);
-            });
+    try {
+        // Pre-warm the model
+        this.updateModelStatus('Loading AI Model...');
+        const modelPromise = use.load();
 
-            this.model = await Promise.race([modelPromise, timeoutPromise]);
-            
-            // Pre-warm the model with a sample embedding
-            await this.model.embed(['warmup']);
-            
-            this.modelLoaded = true;
-            this.updateModelStatus('AI Model loaded successfully', 'success');
-            document.getElementById('askButton').disabled = false;
-            this.bindEvents();
-        } catch (error) {
-            console.error('Error loading model:', error);
-            this.updateModelStatus('Error loading AI model', 'error');
-        }
+        // Continue with other initialization tasks
+        this.bindEvents();
+
+        // Wait for the model to load
+        this.model = await modelPromise;
+
+        // Pre-warm the model with a sample embedding
+        await this.model.embed(['warmup']);
+
+        this.modelLoaded = true;
+        this.updateModelStatus('AI Model loaded successfully', 'success');
+        document.getElementById('askButton').disabled = false;
+    } catch (error) {
+        console.error('Error loading model:', error);
+        this.updateModelStatus('Error loading AI model', 'error');
     }
-            async processAndTrainFeeds() {
+}
+          async processAndTrainFeeds() {
     if (this.processing || !this.modelLoaded) return;
     
     this.processing = true;
@@ -380,17 +460,17 @@
         }
 
         this.feeds = data.feeds || [];
-    this.trainingData = this.feeds.map(feed => ({
-      content: `${feed.title}\n\n${feed.content}`,
-      category: feed.category,
-      source: feed.source
-    }));
+        this.trainingData = this.feeds.map(feed => ({
+            content: `${feed.title}\n\n${feed.content}`,
+            category: feed.category,
+            source: feed.source
+        }));
 
-    const batchSize = 5;
-    for (let i = 0; i < this.feeds.length; i += batchSize) {
-        const batch = this.feeds.slice(i, i + batchSize);
-        await this.processContentBatch(batch, i, this.feeds.length);
-    }
+        const batchSize = 5;
+        for (let i = 0; i < this.feeds.length; i += batchSize) {
+            const batch = this.feeds.slice(i, i + batchSize);
+            await this.processContentBatch(batch, i, this.feeds.length);
+        }
 
         this.displayFeeds();
         if (data.stats) this.displayStats(data.stats);
@@ -403,6 +483,7 @@
         this.updateButton(false);
     }
 }
+
 async processContentBatch(batch, current, total) {
     const progress = (current / total) * 100;
     this.updateProgress(progress);
