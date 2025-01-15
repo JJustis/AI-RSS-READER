@@ -1,7 +1,9 @@
 <?php
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 class EnhancedRSSDiscoverer {
     private $cacheFile = 'discovered_feeds.json';
     private $statsFile = 'feed_stats.json';
@@ -91,7 +93,7 @@ private function getKnownFeeds() {
         // Economics
         ['url' => 'https://www.economist.com/economics/rss.xml', 'category' => 'economics', 'name' => 'The Economist Economics'],
         ['url' => 'https://voxeu.org/feed/recent/rss.xml', 'category' => 'economics', 'name' => 'VoxEU'],
-        ['url' => 'https://www.nber.org/rss/new.xml', 'category' => 'economics', 'name' => 'The National Bureau of Economic Research']
+        ['url' => 'https://www.nber.org/rss/new.xml', 'category' => 'economics', 'name' => 'The National Bureau of Economic Research'],
 		// Politics
         ['url' => 'https://www.politico.com/rss/politicopicks.xml', 'category' => 'politics', 'name' => 'Politico'],
         ['url' => 'https://thehill.com/rss/syndicator/19110', 'category' => 'politics', 'name' => 'The Hill'],
