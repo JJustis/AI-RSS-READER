@@ -1668,7 +1668,605 @@ private function getKnownFeeds() {
 ['url' => 'https://www.citylab.com/feed/', 'category' => 'urban_development', 'name' => 'CityLab'],
 ['url' => 'https://urbanland.uli.org/feed/', 'category' => 'urban_development', 'name' => 'Urban Land Magazine'],
 ['url' => 'https://www.planetizen.com/feed/news', 'category' => 'urban_development', 'name' => 'Planetizen'],
-['url' => 'https://www.smartcitiesdive.com/feeds/news/', 'category' => 'urban_development', 'name' => 'Smart Cities Dive']
+['url' => 'https://www.smartcitiesdive.com/feeds/news/', 'category' => 'urban_development', 'name' => 'Smart Cities Dive'],
+// Add these to your existing getKnownFeeds() array
+
+// Forestry News
+['url' => 'https://www.forestry.gov.uk/rss/news', 'category' => 'forestry_news', 'name' => 'UK Forestry Commission'],
+['url' => 'https://www.fs.usda.gov/rss/forests', 'category' => 'forestry_news', 'name' => 'US Forest Service'],
+['url' => 'https://www.canadianforestry.com/feed/', 'category' => 'forestry_news', 'name' => 'Canadian Forestry'],
+['url' => 'https://www.forestindustry.com/rss/', 'category' => 'forestry_news', 'name' => 'Forest Industry News'],
+
+// Forest Science
+['url' => 'https://academic.oup.com/forestry/rss', 'category' => 'forest_science', 'name' => 'Oxford Forestry Journal'],
+['url' => 'https://www.sciencedaily.com/rss/plants_animals/forests.xml', 'category' => 'forest_science', 'name' => 'ScienceDaily Forests'],
+['url' => 'https://www.frontiersin.org/journals/forests-and-global-change/rss', 'category' => 'forest_science', 'name' => 'Frontiers in Forests'],
+['url' => 'https://www.nature.com/subjects/forestry.rss', 'category' => 'forest_science', 'name' => 'Nature Forestry'],
+
+// Silviculture
+['url' => 'https://www.silviculture.com/feed/', 'category' => 'silviculture', 'name' => 'Silviculture Magazine'],
+['url' => 'https://www.forestresearch.gov.uk/rss/silviculture', 'category' => 'silviculture', 'name' => 'Forest Research UK'],
+['url' => 'https://silviculture.org/news/feed/', 'category' => 'silviculture', 'name' => 'Silviculture Network'],
+['url' => 'https://www.canadiansilviculture.com/feed/', 'category' => 'silviculture', 'name' => 'Canadian Silviculture'],
+
+// Forest Management
+['url' => 'https://www.fao.org/forestry/rss/', 'category' => 'forest_management', 'name' => 'FAO Forestry'],
+['url' => 'https://www.forestmanagement.com/feed/', 'category' => 'forest_management', 'name' => 'Forest Management'],
+['url' => 'https://www.foreststewardship.org/feed/', 'category' => 'forest_management', 'name' => 'Forest Stewardship Council'],
+['url' => 'https://www.sustainableforestry.net/feed/', 'category' => 'forest_management', 'name' => 'Sustainable Forestry'],
+
+// Timber Industry
+['url' => 'https://www.woodbusiness.ca/feed/', 'category' => 'timber_industry', 'name' => 'Wood Business'],
+['url' => 'https://www.timberbiz.com.au/feed/', 'category' => 'timber_industry', 'name' => 'Timber Biz'],
+['url' => 'https://www.lesprom.com/rss/', 'category' => 'timber_industry', 'name' => 'Lesprom Network'],
+['url' => 'https://www.ttjonline.com/rss/', 'category' => 'timber_industry', 'name' => 'Timber Trades Journal'],
+
+// Forest Conservation
+['url' => 'https://www.globalforestwatch.org/feed/', 'category' => 'forest_conservation', 'name' => 'Global Forest Watch'],
+['url' => 'https://forestsnews.cifor.org/feed', 'category' => 'forest_conservation', 'name' => 'CIFOR Forest News'],
+['url' => 'https://www.rainforest-alliance.org/feed/', 'category' => 'forest_conservation', 'name' => 'Rainforest Alliance'],
+['url' => 'https://news.mongabay.com/feed/forests', 'category' => 'forest_conservation', 'name' => 'Mongabay Forests'],
+
+// Urban Forestry
+['url' => 'https://www.urbanforestry.com/feed/', 'category' => 'urban_forestry', 'name' => 'Urban Forestry News'],
+['url' => 'https://www.treepeople.org/feed/', 'category' => 'urban_forestry', 'name' => 'TreePeople'],
+['url' => 'https://www.cityoftrees.org/feed/', 'category' => 'urban_forestry', 'name' => 'City of Trees'],
+['url' => 'https://www.urban-forestry.com/feed/', 'category' => 'urban_forestry', 'name' => 'Society of Municipal Arborists'],
+
+// Forest Products
+['url' => 'https://www.woodworkingnetwork.com/rss.xml', 'category' => 'forest_products', 'name' => 'Woodworking Network'],
+['url' => 'https://www.forestproducts.org/feed/', 'category' => 'forest_products', 'name' => 'Forest Products Association'],
+['url' => 'https://www.woodproducts.fi/rss/', 'category' => 'forest_products', 'name' => 'Wood Products Finland'],
+['url' => 'https://www.pulpandpaper.com/feed/', 'category' => 'forest_products', 'name' => 'Pulp and Paper'],
+
+// Forest Health
+['url' => 'https://www.foresthealth.org/feed/', 'category' => 'forest_health', 'name' => 'Forest Health News'],
+['url' => 'https://www.fs.fed.us/foresthealth/rss/', 'category' => 'forest_health', 'name' => 'USFS Forest Health'],
+['url' => 'https://forestpathology.org/feed/', 'category' => 'forest_health', 'name' => 'Forest Pathology'],
+['url' => 'https://www.forestpests.org/feed/', 'category' => 'forest_health', 'name' => 'Forest Pests'],
+
+// Forest Fire Management
+['url' => 'https://www.nifc.gov/RSS/nifc.xml', 'category' => 'forest_fire', 'name' => 'National Interagency Fire Center'],
+['url' => 'https://firewise.org/feed/', 'category' => 'forest_fire', 'name' => 'Firewise USA'],
+['url' => 'https://www.wildfire.org/rss/', 'category' => 'forest_fire', 'name' => 'International Association of Wildland Fire'],
+['url' => 'https://www.fireecology.org/feed/', 'category' => 'forest_fire', 'name' => 'Fire Ecology'],
+
+// Forest Economics
+['url' => 'https://www.foresteconomics.org/feed/', 'category' => 'forest_economics', 'name' => 'Forest Economics'],
+['url' => 'https://www.timbereconomics.com/feed/', 'category' => 'forest_economics', 'name' => 'Timber Economics'],
+['url' => 'https://www.forestbusinessnetwork.com/feed/', 'category' => 'forest_economics', 'name' => 'Forest Business Network'],
+['url' => 'https://www.forestindustries.eu/rss/', 'category' => 'forest_economics', 'name' => 'Forest Industries'],
+
+// Agroforestry
+['url' => 'https://www.agroforestry.org/feed/', 'category' => 'agroforestry', 'name' => 'Association for Temperate Agroforestry'],
+['url' => 'https://www.worldagroforestry.org/news/rss.xml', 'category' => 'agroforestry', 'name' => 'World Agroforestry'],
+['url' => 'https://www.agforward.eu/feed/', 'category' => 'agroforestry', 'name' => 'AGFORWARD'],
+['url' => 'https://www.centerforagroforestry.org/feed/', 'category' => 'agroforestry', 'name' => 'Center for Agroforestry'],
+
+// Forest Recreation
+['url' => 'https://www.americantrails.org/feed', 'category' => 'forest_recreation', 'name' => 'American Trails'],
+['url' => 'https://www.forestcamping.com/feed/', 'category' => 'forest_recreation', 'name' => 'Forest Camping'],
+['url' => 'https://www.nationalforests.org/blog/rss', 'category' => 'forest_recreation', 'name' => 'National Forest Foundation'],
+['url' => 'https://www.hikingproject.com/rss/', 'category' => 'forest_recreation', 'name' => 'Hiking Project'],
+// Add these to your existing getKnownFeeds() array
+
+// United States
+['url' => 'https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/section/us/rss.xml', 'category' => 'usa_news', 'name' => 'New York Times US'],
+['url' => 'https://abcnews.go.com/abcnews/usheadlines', 'category' => 'usa_news', 'name' => 'ABC US News'],
+['url' => 'https://feeds.npr.org/1001/rss.xml', 'category' => 'usa_news', 'name' => 'NPR US News'],
+['url' => 'https://www.pbs.org/newshour/feeds/rss/headlines', 'category' => 'usa_news', 'name' => 'PBS NewsHour'],
+['url' => 'https://www.usatoday.com/rss/news/nation/', 'category' => 'usa_news', 'name' => 'USA Today National'],
+
+// Canada
+['url' => 'https://www.cbc.ca/cmlink/rss-canada', 'category' => 'canada_news', 'name' => 'CBC Canada'],
+['url' => 'https://www.theglobeandmail.com/feed/', 'category' => 'canada_news', 'name' => 'Globe and Mail'],
+['url' => 'https://www.ctvnews.ca/rss/canada', 'category' => 'canada_news', 'name' => 'CTV News Canada'],
+['url' => 'https://nationalpost.com/feed/rss/canada', 'category' => 'canada_news', 'name' => 'National Post Canada'],
+['url' => 'https://www.thestar.com/feed.rss', 'category' => 'canada_news', 'name' => 'Toronto Star'],
+
+// Mexico
+['url' => 'https://www.eluniversal.com.mx/rss.xml', 'category' => 'mexico_news', 'name' => 'El Universal'],
+['url' => 'https://www.reforma.com/rss/portada.xml', 'category' => 'mexico_news', 'name' => 'Reforma'],
+['url' => 'https://www.excelsior.com.mx/rss.xml', 'category' => 'mexico_news', 'name' => 'Excélsior'],
+['url' => 'https://www.jornada.com.mx/rss/mexico.xml', 'category' => 'mexico_news', 'name' => 'La Jornada'],
+['url' => 'https://www.milenio.com/feed', 'category' => 'mexico_news', 'name' => 'Milenio'],
+
+// US Northeast
+['url' => 'https://www.bostonglobe.com/rss/metro', 'category' => 'us_northeast', 'name' => 'Boston Globe'],
+['url' => 'https://www.inquirer.com/feed', 'category' => 'us_northeast', 'name' => 'Philadelphia Inquirer'],
+['url' => 'https://nypost.com/feed/', 'category' => 'us_northeast', 'name' => 'New York Post'],
+['url' => 'https://www.newsday.com/feed', 'category' => 'us_northeast', 'name' => 'Newsday'],
+
+// US Southeast
+['url' => 'https://www.ajc.com/feed', 'category' => 'us_southeast', 'name' => 'Atlanta Journal-Constitution'],
+['url' => 'https://www.miamiherald.com/news/nation-world/national/feed/', 'category' => 'us_southeast', 'name' => 'Miami Herald'],
+['url' => 'https://www.orlandosentinel.com/feed', 'category' => 'us_southeast', 'name' => 'Orlando Sentinel'],
+['url' => 'https://www.tennessean.com/feed', 'category' => 'us_southeast', 'name' => 'The Tennessean'],
+
+// US Midwest
+['url' => 'https://www.chicagotribune.com/feed', 'category' => 'us_midwest', 'name' => 'Chicago Tribune'],
+['url' => 'https://www.detroitnews.com/feed', 'category' => 'us_midwest', 'name' => 'Detroit News'],
+['url' => 'https://www.startribune.com/feed', 'category' => 'us_midwest', 'name' => 'Minneapolis Star Tribune'],
+['url' => 'https://www.cleveland.com/feed', 'category' => 'us_midwest', 'name' => 'Cleveland.com'],
+
+// US Southwest
+['url' => 'https://www.dallasnews.com/feed', 'category' => 'us_southwest', 'name' => 'Dallas Morning News'],
+['url' => 'https://www.houstonchronicle.com/feed', 'category' => 'us_southwest', 'name' => 'Houston Chronicle'],
+['url' => 'https://www.azcentral.com/feed', 'category' => 'us_southwest', 'name' => 'Arizona Republic'],
+['url' => 'https://www.abqjournal.com/feed', 'category' => 'us_southwest', 'name' => 'Albuquerque Journal'],
+
+// US West Coast
+['url' => 'https://www.latimes.com/feed', 'category' => 'us_west', 'name' => 'Los Angeles Times'],
+['url' => 'https://www.sfchronicle.com/feed', 'category' => 'us_west', 'name' => 'San Francisco Chronicle'],
+['url' => 'https://www.seattletimes.com/feed', 'category' => 'us_west', 'name' => 'Seattle Times'],
+['url' => 'https://www.oregonlive.com/feed', 'category' => 'us_west', 'name' => 'The Oregonian'],
+
+// Canadian Provinces
+['url' => 'https://www.theprovince.com/feed', 'category' => 'canada_provinces', 'name' => 'The Province BC'],
+['url' => 'https://calgaryherald.com/feed', 'category' => 'canada_provinces', 'name' => 'Calgary Herald'],
+['url' => 'https://montrealgazette.com/feed', 'category' => 'canada_provinces', 'name' => 'Montreal Gazette'],
+['url' => 'https://www.thechronicleherald.ca/feed', 'category' => 'canada_provinces', 'name' => 'Halifax Chronicle Herald'],
+// Add these to your existing getKnownFeeds() array
+
+// United Kingdom
+['url' => 'https://feeds.bbci.co.uk/news/uk/rss.xml', 'category' => 'uk_news', 'name' => 'BBC UK News'],
+['url' => 'https://www.theguardian.com/uk/rss', 'category' => 'uk_news', 'name' => 'The Guardian UK'],
+['url' => 'https://www.telegraph.co.uk/rss.xml', 'category' => 'uk_news', 'name' => 'The Telegraph'],
+['url' => 'https://www.independent.co.uk/rss', 'category' => 'uk_news', 'name' => 'The Independent'],
+['url' => 'https://www.thetimes.co.uk/rss', 'category' => 'uk_news', 'name' => 'The Times'],
+
+// Germany
+['url' => 'https://www.spiegel.de/international/index.rss', 'category' => 'germany_news', 'name' => 'Der Spiegel International'],
+['url' => 'https://www.dw.com/en/rss/news', 'category' => 'germany_news', 'name' => 'Deutsche Welle'],
+['url' => 'https://www.faz.net/rss/aktuell/', 'category' => 'germany_news', 'name' => 'Frankfurter Allgemeine'],
+['url' => 'https://www.sueddeutsche.de/news.rss', 'category' => 'germany_news', 'name' => 'Süddeutsche Zeitung'],
+['url' => 'https://www.zeit.de/index/index/rss.xml', 'category' => 'germany_news', 'name' => 'Die Zeit'],
+
+// France
+['url' => 'https://www.lemonde.fr/rss/en_continu.xml', 'category' => 'france_news', 'name' => 'Le Monde'],
+['url' => 'https://www.lefigaro.fr/rss/figaro_actualites.xml', 'category' => 'france_news', 'name' => 'Le Figaro'],
+['url' => 'https://www.liberation.fr/rss/', 'category' => 'france_news', 'name' => 'Libération'],
+['url' => 'https://www.france24.com/en/rss', 'category' => 'france_news', 'name' => 'France 24'],
+['url' => 'https://www.leparisien.fr/rss.xml', 'category' => 'france_news', 'name' => 'Le Parisien'],
+
+// Italy
+['url' => 'https://www.corriere.it/rss/homepage.xml', 'category' => 'italy_news', 'name' => 'Corriere della Sera'],
+['url' => 'https://www.repubblica.it/rss/homepage/rss2.0.xml', 'category' => 'italy_news', 'name' => 'La Repubblica'],
+['url' => 'https://www.lastampa.it/rss.xml', 'category' => 'italy_news', 'name' => 'La Stampa'],
+['url' => 'https://www.ilsole24ore.com/rss', 'category' => 'italy_news', 'name' => 'Il Sole 24 Ore'],
+
+// Spain
+['url' => 'https://elpais.com/rss/elpais/portada.xml', 'category' => 'spain_news', 'name' => 'El País'],
+['url' => 'https://www.elmundo.es/rss/portada.xml', 'category' => 'spain_news', 'name' => 'El Mundo'],
+['url' => 'https://www.abc.es/rss/feeds/abc_EspanaEspana.xml', 'category' => 'spain_news', 'name' => 'ABC'],
+['url' => 'https://www.lavanguardia.com/rss', 'category' => 'spain_news', 'name' => 'La Vanguardia'],
+
+// Scandinavia
+['url' => 'https://www.thelocal.se/feeds/rss.xml', 'category' => 'scandinavia_news', 'name' => 'The Local Sweden'],
+['url' => 'https://www.thelocal.dk/feeds/rss.xml', 'category' => 'scandinavia_news', 'name' => 'The Local Denmark'],
+['url' => 'https://www.thelocal.no/feeds/rss.xml', 'category' => 'scandinavia_news', 'name' => 'The Local Norway'],
+['url' => 'https://yle.fi/uutiset/rss/uutiset.rss', 'category' => 'scandinavia_news', 'name' => 'YLE Finland'],
+
+// Eastern Europe
+['url' => 'https://www.themoscowtimes.com/rss/news', 'category' => 'eastern_europe', 'name' => 'The Moscow Times'],
+['url' => 'https://www.kyivpost.com/feed', 'category' => 'eastern_europe', 'name' => 'Kyiv Post'],
+['url' => 'https://www.praguemorning.cz/feed/', 'category' => 'eastern_europe', 'name' => 'Prague Morning'],
+['url' => 'https://warszawapoint.pl/feed', 'category' => 'eastern_europe', 'name' => 'Warszawa Point'],
+
+// Benelux
+['url' => 'https://www.dutchnews.nl/feed/', 'category' => 'benelux_news', 'name' => 'Dutch News'],
+['url' => 'https://www.brusselstimes.com/feed/', 'category' => 'benelux_news', 'name' => 'Brussels Times'],
+['url' => 'https://today.rtl.lu/rss', 'category' => 'benelux_news', 'name' => 'RTL Luxembourg'],
+['url' => 'https://www.flanderstoday.eu/feed', 'category' => 'benelux_news', 'name' => 'Flanders Today'],
+
+// Mediterranean
+['url' => 'https://www.ekathimerini.com/rss', 'category' => 'mediterranean_news', 'name' => 'Kathimerini (Greece)'],
+['url' => 'https://www.hurriyetdailynews.com/rss', 'category' => 'mediterranean_news', 'name' => 'Hurriyet (Turkey)'],
+['url' => 'https://www.timesofmalta.com/rss', 'category' => 'mediterranean_news', 'name' => 'Times of Malta'],
+['url' => 'https://cyprus-mail.com/feed/', 'category' => 'mediterranean_news', 'name' => 'Cyprus Mail'],
+// Add these to your existing getKnownFeeds() array
+
+// Japan
+['url' => 'https://www3.nhk.or.jp/nhkworld/en/rss/', 'category' => 'japan_news', 'name' => 'NHK World'],
+['url' => 'https://www.japantimes.co.jp/feed/', 'category' => 'japan_news', 'name' => 'Japan Times'],
+['url' => 'https://mainichi.jp/rss/eng/mainichi.rss', 'category' => 'japan_news', 'name' => 'Mainichi Shimbun'],
+['url' => 'https://www.asahi.com/ajw/feed/index.rdf', 'category' => 'japan_news', 'name' => 'Asahi Shimbun'],
+['url' => 'https://japantoday.com/feed', 'category' => 'japan_news', 'name' => 'Japan Today'],
+
+// China
+['url' => 'https://www.scmp.com/rss/91/feed', 'category' => 'china_news', 'name' => 'South China Morning Post'],
+['url' => 'https://chinadaily.com.cn/rss/world_rss.xml', 'category' => 'china_news', 'name' => 'China Daily'],
+['url' => 'https://www.globaltimes.cn/rss/index.xml', 'category' => 'china_news', 'name' => 'Global Times'],
+['url' => 'https://english.caixin.com/rss/feed.xml', 'category' => 'china_news', 'name' => 'Caixin Global'],
+['url' => 'https://www.sixthtone.com/rss', 'category' => 'china_news', 'name' => 'Sixth Tone'],
+
+// South Korea
+['url' => 'https://www.koreaherald.com/rss_xml.php', 'category' => 'korea_news', 'name' => 'Korea Herald'],
+['url' => 'https://en.yna.co.kr/RSS/news.xml', 'category' => 'korea_news', 'name' => 'Yonhap News'],
+['url' => 'https://feeds.hankyung.com/feed/economia.xml', 'category' => 'korea_news', 'name' => 'Korea Economic Daily'],
+['url' => 'https://www.koreatimes.co.kr/www/rss/rss.xml', 'category' => 'korea_news', 'name' => 'Korea Times'],
+
+// India
+['url' => 'https://timesofindia.indiatimes.com/rssfeeds/1221656.cms', 'category' => 'india_news', 'name' => 'Times of India'],
+['url' => 'https://www.thehindu.com/rss/news.rss', 'category' => 'india_news', 'name' => 'The Hindu'],
+['url' => 'https://www.ndtv.com/rss/india', 'category' => 'india_news', 'name' => 'NDTV'],
+['url' => 'https://indianexpress.com/feed/', 'category' => 'india_news', 'name' => 'Indian Express'],
+['url' => 'https://www.hindustantimes.com/rss/india', 'category' => 'india_news', 'name' => 'Hindustan Times'],
+
+// Southeast Asia
+['url' => 'https://www.bangkokpost.com/rss/news.xml', 'category' => 'southeast_asia', 'name' => 'Bangkok Post'],
+['url' => 'https://www.straitstimes.com/news/asia/rss.xml', 'category' => 'southeast_asia', 'name' => 'Straits Times'],
+['url' => 'https://www.thejakartapost.com/rss', 'category' => 'southeast_asia', 'name' => 'Jakarta Post'],
+['url' => 'https://vietnamnews.vn/rss/news.rss', 'category' => 'southeast_asia', 'name' => 'Vietnam News'],
+['url' => 'https://www.philstar.com/rss/headlines', 'category' => 'southeast_asia', 'name' => 'Philippine Star'],
+
+// Middle East
+['url' => 'https://www.haaretz.com/cmlink/1.4605045', 'category' => 'middle_east', 'name' => 'Haaretz'],
+['url' => 'https://www.aljazeera.com/xml/rss/all.xml', 'category' => 'middle_east', 'name' => 'Al Jazeera'],
+['url' => 'https://www.jpost.com/rss/front-page', 'category' => 'middle_east', 'name' => 'Jerusalem Post'],
+['url' => 'https://english.alarabiya.net/rss', 'category' => 'middle_east', 'name' => 'Al Arabiya'],
+['url' => 'https://gulfnews.com/rss/news', 'category' => 'middle_east', 'name' => 'Gulf News'],
+
+// Central Asia
+['url' => 'https://astanatimes.com/feed/', 'category' => 'central_asia', 'name' => 'Astana Times'],
+['url' => 'https://www.timesca.com/index.php/rss', 'category' => 'central_asia', 'name' => 'Times of Central Asia'],
+['url' => 'https://eurasianet.org/rss', 'category' => 'central_asia', 'name' => 'Eurasianet'],
+['url' => 'https://www.inform.kz/en/rss', 'category' => 'central_asia', 'name' => 'Kazinform'],
+
+// Russia & CIS
+['url' => 'https://tass.com/rss/v2.xml', 'category' => 'russia_news', 'name' => 'TASS'],
+['url' => 'https://rg.ru/rss', 'category' => 'russia_news', 'name' => 'Rossiyskaya Gazeta'],
+['url' => 'https://interfax.com/newseng.asp?y=2021', 'category' => 'russia_news', 'name' => 'Interfax'],
+['url' => 'https://www.themoscowtimes.com/rss/news', 'category' => 'russia_news', 'name' => 'Moscow Times'],
+
+// Pakistan & Bangladesh
+['url' => 'https://www.dawn.com/feed', 'category' => 'south_asia', 'name' => 'Dawn'],
+['url' => 'https://tribune.com.pk/feed/home', 'category' => 'south_asia', 'name' => 'Express Tribune'],
+['url' => 'https://www.thedailystar.net/rss.xml', 'category' => 'south_asia', 'name' => 'Daily Star'],
+['url' => 'https://bdnews24.com/rss.php', 'category' => 'south_asia', 'name' => 'bdnews24'],
+// Add these to your existing getKnownFeeds() array
+
+// Australia
+['url' => 'https://www.abc.net.au/news/feed/45910/rss.xml', 'category' => 'australia_news', 'name' => 'ABC News'],
+['url' => 'https://www.smh.com.au/rss/feed.xml', 'category' => 'australia_news', 'name' => 'Sydney Morning Herald'],
+['url' => 'https://www.theaustralian.com.au/feed', 'category' => 'australia_news', 'name' => 'The Australian'],
+['url' => 'https://www.news.com.au/feed', 'category' => 'australia_news', 'name' => 'News.com.au'],
+['url' => 'https://www.theage.com.au/rss/feed.xml', 'category' => 'australia_news', 'name' => 'The Age'],
+
+// New Zealand
+['url' => 'https://www.nzherald.co.nz/rss/', 'category' => 'newzealand_news', 'name' => 'NZ Herald'],
+['url' => 'https://www.stuff.co.nz/rss', 'category' => 'newzealand_news', 'name' => 'Stuff.co.nz'],
+['url' => 'https://www.rnz.co.nz/rss', 'category' => 'newzealand_news', 'name' => 'Radio New Zealand'],
+['url' => 'https://www.newshub.co.nz/home.rss', 'category' => 'newzealand_news', 'name' => 'Newshub'],
+
+// Pacific Islands
+['url' => 'https://www.rnz.co.nz/international/rss', 'category' => 'pacific_news', 'name' => 'RNZ Pacific'],
+['url' => 'https://www.pina.com.fj/feed/', 'category' => 'pacific_news', 'name' => 'Pacific Islands News Association'],
+['url' => 'https://www.samoanews.com/rss.xml', 'category' => 'pacific_news', 'name' => 'Samoa News'],
+['url' => 'https://fijisun.com.fj/feed/', 'category' => 'pacific_news', 'name' => 'Fiji Sun'],
+
+// South Africa
+['url' => 'https://www.news24.com/rss', 'category' => 'south_africa', 'name' => 'News24'],
+['url' => 'https://www.timeslive.co.za/rss/', 'category' => 'south_africa', 'name' => 'Times Live'],
+['url' => 'https://mg.co.za/feed/', 'category' => 'south_africa', 'name' => 'Mail & Guardian'],
+['url' => 'https://www.iol.co.za/rss', 'category' => 'south_africa', 'name' => 'IOL News'],
+
+// East Africa
+['url' => 'https://www.nation.co.ke/rss', 'category' => 'east_africa', 'name' => 'Daily Nation'],
+['url' => 'https://www.monitor.co.ug/rss', 'category' => 'east_africa', 'name' => 'Daily Monitor'],
+['url' => 'https://www.thecitizen.co.tz/feed', 'category' => 'east_africa', 'name' => 'The Citizen'],
+['url' => 'https://www.theeastafrican.co.ke/rss', 'category' => 'east_africa', 'name' => 'The East African'],
+
+// West Africa
+['url' => 'https://www.premiumtimesng.com/feed', 'category' => 'west_africa', 'name' => 'Premium Times'],
+['url' => 'https://www.vanguardngr.com/feed/', 'category' => 'west_africa', 'name' => 'Vanguard Nigeria'],
+['url' => 'https://www.ghanaweb.com/GhanaHomePage/rss/', 'category' => 'west_africa', 'name' => 'GhanaWeb'],
+['url' => 'https://www.thenewdawnliberia.com/feed/', 'category' => 'west_africa', 'name' => 'New Dawn Liberia'],
+
+// North Africa
+['url' => 'https://www.egypttoday.com/rss.aspx', 'category' => 'north_africa', 'name' => 'Egypt Today'],
+['url' => 'https://www.moroccoworldnews.com/feed/', 'category' => 'north_africa', 'name' => 'Morocco World News'],
+['url' => 'https://www.tap.info.tn/en/rss', 'category' => 'north_africa', 'name' => 'Tunisia TAP'],
+['url' => 'https://www.libyaherald.com/feed/', 'category' => 'north_africa', 'name' => 'Libya Herald'],
+
+// Central Africa
+['url' => 'https://www.cameroonpostline.com/feed/', 'category' => 'central_africa', 'name' => 'Cameroon Post'],
+['url' => 'https://www.journalducameroun.com/en/feed/', 'category' => 'central_africa', 'name' => 'Journal du Cameroun'],
+['url' => 'https://www.adiac-congo.com/rss.xml', 'category' => 'central_africa', 'name' => 'Agence d\'Information d\'Afrique Centrale'],
+['url' => 'https://www.digitalcongo.net/rss/', 'category' => 'central_africa', 'name' => 'Digital Congo'],
+
+// Southern Africa
+['url' => 'https://www.herald.co.zw/feed/', 'category' => 'southern_africa', 'name' => 'The Herald Zimbabwe'],
+['url' => 'https://www.daily-mail.co.zm/feed/', 'category' => 'southern_africa', 'name' => 'Zambia Daily Mail'],
+['url' => 'https://www.namibian.com.na/feed/', 'category' => 'southern_africa', 'name' => 'The Namibian'],
+['url' => 'https://www.mmegi.bw/rss', 'category' => 'southern_africa', 'name' => 'Mmegi Online'],
+// Add these to your existing getKnownFeeds() array
+
+// Brazil
+['url' => 'https://www.folha.uol.com.br/feed/rss/', 'category' => 'brazil_news', 'name' => 'Folha de São Paulo'],
+['url' => 'https://www.estadao.com.br/rss/ultimas.xml', 'category' => 'brazil_news', 'name' => 'O Estado de S. Paulo'],
+['url' => 'https://g1.globo.com/rss/g1/', 'category' => 'brazil_news', 'name' => 'G1 Globo'],
+['url' => 'https://rss.uol.com.br/feed/noticias.xml', 'category' => 'brazil_news', 'name' => 'UOL Notícias'],
+['url' => 'https://www.valor.com.br/rss', 'category' => 'brazil_news', 'name' => 'Valor Econômico'],
+
+// Argentina
+['url' => 'https://www.clarin.com/rss/', 'category' => 'argentina_news', 'name' => 'Clarín'],
+['url' => 'https://www.lanacion.com.ar/arcio/rss/', 'category' => 'argentina_news', 'name' => 'La Nación'],
+['url' => 'https://www.pagina12.com.ar/rss/', 'category' => 'argentina_news', 'name' => 'Página/12'],
+['url' => 'https://www.infobae.com/feeds/rss/', 'category' => 'argentina_news', 'name' => 'Infobae'],
+['url' => 'https://www.ambito.com/rss', 'category' => 'argentina_news', 'name' => 'Ámbito Financiero'],
+
+// Chile
+['url' => 'https://www.emol.com/rss/', 'category' => 'chile_news', 'name' => 'El Mercurio'],
+['url' => 'https://www.latercera.com/feed/', 'category' => 'chile_news', 'name' => 'La Tercera'],
+['url' => 'https://www.cooperativa.cl/rss/', 'category' => 'chile_news', 'name' => 'Radio Cooperativa'],
+['url' => 'https://www.elmostrador.cl/feed/', 'category' => 'chile_news', 'name' => 'El Mostrador'],
+
+// Colombia
+['url' => 'https://www.eltiempo.com/rss/', 'category' => 'colombia_news', 'name' => 'El Tiempo'],
+['url' => 'https://www.elespectador.com/feed/', 'category' => 'colombia_news', 'name' => 'El Espectador'],
+['url' => 'https://www.semana.com/feed/', 'category' => 'colombia_news', 'name' => 'Semana'],
+['url' => 'https://www.portafolio.co/rss', 'category' => 'colombia_news', 'name' => 'Portafolio'],
+
+// Peru
+['url' => 'https://elcomercio.pe/feed/', 'category' => 'peru_news', 'name' => 'El Comercio'],
+['url' => 'https://larepublica.pe/feed/', 'category' => 'peru_news', 'name' => 'La República'],
+['url' => 'https://peru21.pe/feed/', 'category' => 'peru_news', 'name' => 'Perú21'],
+['url' => 'https://gestion.pe/feed/', 'category' => 'peru_news', 'name' => 'Gestión'],
+
+// Venezuela
+['url' => 'https://www.elnacional.com/feed/', 'category' => 'venezuela_news', 'name' => 'El Nacional'],
+['url' => 'https://www.eluniversal.com/rss/', 'category' => 'venezuela_news', 'name' => 'El Universal'],
+['url' => 'https://www.tal.cual.com.ve/feed/', 'category' => 'venezuela_news', 'name' => 'TalCual'],
+['url' => 'https://efectococuyo.com/feed/', 'category' => 'venezuela_news', 'name' => 'Efecto Cocuyo'],
+
+// Ecuador
+['url' => 'https://www.eluniverso.com/feed/', 'category' => 'ecuador_news', 'name' => 'El Universo'],
+['url' => 'https://www.elcomercio.com/feed/', 'category' => 'ecuador_news', 'name' => 'El Comercio EC'],
+['url' => 'https://www.expreso.ec/feed/', 'category' => 'ecuador_news', 'name' => 'Expreso'],
+['url' => 'https://www.eltelegrafo.com.ec/rss/', 'category' => 'ecuador_news', 'name' => 'El Telégrafo'],
+
+// Bolivia
+['url' => 'https://www.la-razon.com/rss/', 'category' => 'bolivia_news', 'name' => 'La Razón'],
+['url' => 'https://www.lostiempos.com/rss', 'category' => 'bolivia_news', 'name' => 'Los Tiempos'],
+['url' => 'https://eldeber.com.bo/rss/', 'category' => 'bolivia_news', 'name' => 'El Deber'],
+['url' => 'https://www.paginasiete.bo/rss/', 'category' => 'bolivia_news', 'name' => 'Página Siete'],
+
+// Paraguay
+['url' => 'https://www.abc.com.py/feed/', 'category' => 'paraguay_news', 'name' => 'ABC Color'],
+['url' => 'https://www.ultimahora.com/rss/', 'category' => 'paraguay_news', 'name' => 'Última Hora'],
+['url' => 'https://www.lanacion.com.py/feed/', 'category' => 'paraguay_news', 'name' => 'La Nación PY'],
+['url' => 'https://www.hoy.com.py/rss', 'category' => 'paraguay_news', 'name' => 'HOY'],
+
+// Uruguay
+['url' => 'https://www.elpais.com.uy/rss/', 'category' => 'uruguay_news', 'name' => 'El País UY'],
+['url' => 'https://www.elobservador.com.uy/rss/', 'category' => 'uruguay_news', 'name' => 'El Observador'],
+['url' => 'https://www.republica.com.uy/feed/', 'category' => 'uruguay_news', 'name' => 'La República'],
+['url' => 'https://www.montevideo.com.uy/rss/', 'category' => 'uruguay_news', 'name' => 'Montevideo Portal'],
+
+// Guyana & Suriname
+['url' => 'https://www.stabroeknews.com/feed/', 'category' => 'guyana_news', 'name' => 'Stabroek News'],
+['url' => 'https://demerarawaves.com/feed/', 'category' => 'guyana_news', 'name' => 'Demerara Waves'],
+['url' => 'https://www.dwtonline.com/rss/', 'category' => 'suriname_news', 'name' => 'De Ware Tijd'],
+['url' => 'https://www.starnieuws.com/rss/', 'category' => 'suriname_news', 'name' => 'Star Nieuws'],
+
+// Regional News
+['url' => 'https://www.mercopress.com/rss/', 'category' => 'south_america_regional', 'name' => 'MercoPress'],
+['url' => 'https://latinamericareports.com/feed/', 'category' => 'south_america_regional', 'name' => 'Latin America Reports'],
+['url' => 'https://nacla.org/rss.xml', 'category' => 'south_america_regional', 'name' => 'NACLA'],
+['url' => 'https://www.americasquarterly.org/feed/', 'category' => 'south_america_regional', 'name' => 'Americas Quarterly'],
+
+// Business & Economy
+['url' => 'https://riotimesonline.com/feed/', 'category' => 'south_america_business', 'name' => 'The Rio Times'],
+['url' => 'https://www.bnamericas.com/rss/news', 'category' => 'south_america_business', 'name' => 'BNamericas'],
+['url' => 'https://www.americaeconomia.com/rss', 'category' => 'south_america_business', 'name' => 'América Economía'],
+['url' => 'https://www.latameconomy.org/en/rss', 'category' => 'south_america_business', 'name' => 'LATAM Economy'],
+// Add these to your existing getKnownFeeds() array
+
+// Australian National
+['url' => 'https://www.abc.net.au/news/feed/45910/rss.xml', 'category' => 'australia_national', 'name' => 'ABC News'],
+['url' => 'https://www.sbs.com.au/news/feed', 'category' => 'australia_national', 'name' => 'SBS News'],
+['url' => 'https://www.theaustralian.com.au/feed', 'category' => 'australia_national', 'name' => 'The Australian'],
+['url' => 'https://www.theguardian.com/australia-news/rss', 'category' => 'australia_national', 'name' => 'Guardian Australia'],
+
+// New South Wales
+['url' => 'https://www.smh.com.au/rss/feed.xml', 'category' => 'nsw_news', 'name' => 'Sydney Morning Herald'],
+['url' => 'https://www.dailytelegraph.com.au/feed', 'category' => 'nsw_news', 'name' => 'Daily Telegraph'],
+['url' => 'https://www.newcastleherald.com.au/feed/', 'category' => 'nsw_news', 'name' => 'Newcastle Herald'],
+['url' => 'https://www.illawarramercury.com.au/feed/', 'category' => 'nsw_news', 'name' => 'Illawarra Mercury'],
+
+// Victoria
+['url' => 'https://www.theage.com.au/rss/feed.xml', 'category' => 'victoria_news', 'name' => 'The Age'],
+['url' => 'https://www.heraldsun.com.au/feed', 'category' => 'victoria_news', 'name' => 'Herald Sun'],
+['url' => 'https://www.geelongadvertiser.com.au/feed', 'category' => 'victoria_news', 'name' => 'Geelong Advertiser'],
+['url' => 'https://www.bendigoadvertiser.com.au/feed/', 'category' => 'victoria_news', 'name' => 'Bendigo Advertiser'],
+
+// Queensland
+['url' => 'https://www.couriermail.com.au/feed', 'category' => 'qld_news', 'name' => 'Courier Mail'],
+['url' => 'https://www.brisbanetimes.com.au/rss/feed.xml', 'category' => 'qld_news', 'name' => 'Brisbane Times'],
+['url' => 'https://www.goldcoastbulletin.com.au/feed', 'category' => 'qld_news', 'name' => 'Gold Coast Bulletin'],
+['url' => 'https://www.cairnspost.com.au/feed', 'category' => 'qld_news', 'name' => 'Cairns Post'],
+
+// Western Australia
+['url' => 'https://thewest.com.au/feed', 'category' => 'wa_news', 'name' => 'The West Australian'],
+['url' => 'https://www.perthnow.com.au/feed', 'category' => 'wa_news', 'name' => 'Perth Now'],
+['url' => 'https://www.watoday.com.au/rss/feed.xml', 'category' => 'wa_news', 'name' => 'WA Today'],
+['url' => 'https://www.albanyadvertiser.com.au/feed', 'category' => 'wa_news', 'name' => 'Albany Advertiser'],
+
+// South Australia
+['url' => 'https://www.adelaidenow.com.au/feed', 'category' => 'sa_news', 'name' => 'The Advertiser'],
+['url' => 'https://indaily.com.au/feed/', 'category' => 'sa_news', 'name' => 'InDaily'],
+['url' => 'https://www.portlincolntimes.com.au/feed/', 'category' => 'sa_news', 'name' => 'Port Lincoln Times'],
+['url' => 'https://www.victorharbortimes.com.au/feed/', 'category' => 'sa_news', 'name' => 'Victor Harbor Times'],
+
+// Tasmania
+['url' => 'https://www.themercury.com.au/feed', 'category' => 'tas_news', 'name' => 'The Mercury'],
+['url' => 'https://www.examiner.com.au/feed/', 'category' => 'tas_news', 'name' => 'The Examiner'],
+['url' => 'https://www.theadvocate.com.au/feed/', 'category' => 'tas_news', 'name' => 'The Advocate'],
+['url' => 'https://www.burnieadvocate.com.au/feed/', 'category' => 'tas_news', 'name' => 'Burnie Advocate'],
+
+// Northern Territory
+['url' => 'https://www.ntnews.com.au/feed', 'category' => 'nt_news', 'name' => 'NT News'],
+['url' => 'https://katherinetime.com.au/feed/', 'category' => 'nt_news', 'name' => 'Katherine Times'],
+['url' => 'https://www.centralianadvocate.com.au/feed', 'category' => 'nt_news', 'name' => 'Centralian Advocate'],
+['url' => 'https://www.alicespringsnews.com.au/feed/', 'category' => 'nt_news', 'name' => 'Alice Springs News'],
+
+// Antarctic Research
+['url' => 'https://www.antarctica.gov.au/feed/', 'category' => 'antarctica_research', 'name' => 'Australian Antarctic Program'],
+['url' => 'https://www.bas.ac.uk/feed/', 'category' => 'antarctica_research', 'name' => 'British Antarctic Survey'],
+['url' => 'https://www.antarcticanz.govt.nz/feed', 'category' => 'antarctica_research', 'name' => 'Antarctica New Zealand'],
+['url' => 'https://www.comnap.aq/feed/', 'category' => 'antarctica_research', 'name' => 'COMNAP'],
+
+// Antarctic Science
+['url' => 'https://www.polarjournal.ch/en/feed/', 'category' => 'antarctica_science', 'name' => 'Polar Journal'],
+['url' => 'https://www.antarcticscience.com/feed/', 'category' => 'antarctica_science', 'name' => 'Antarctic Science'],
+['url' => 'https://www.polarresearch.net/feed', 'category' => 'antarctica_science', 'name' => 'Polar Research'],
+['url' => 'https://www.nature.com/subjects/antarctica.rss', 'category' => 'antarctica_science', 'name' => 'Nature Antarctica'],
+
+// Southern Hemisphere News
+['url' => 'https://www.southernhemisphereweather.com/feed/', 'category' => 'southern_hemisphere', 'name' => 'Southern Weather'],
+['url' => 'https://www.weatherzone.com.au/feed/', 'category' => 'southern_hemisphere', 'name' => 'Weatherzone'],
+['url' => 'https://www.niwa.co.nz/news/rss', 'category' => 'southern_hemisphere', 'name' => 'NIWA'],
+['url' => 'https://www.bom.gov.au/rss/', 'category' => 'southern_hemisphere', 'name' => 'Bureau of Meteorology'],
+
+// Northern Hemisphere News
+['url' => 'https://www.arctic.noaa.gov/feed', 'category' => 'northern_hemisphere', 'name' => 'NOAA Arctic'],
+['url' => 'https://www.climate.gov/news-features/feed', 'category' => 'northern_hemisphere', 'name' => 'Climate.gov'],
+['url' => 'https://www.north.org/feed/', 'category' => 'northern_hemisphere', 'name' => 'Northern News'],
+['url' => 'https://www.weathernorth.com/feed/', 'category' => 'northern_hemisphere', 'name' => 'Weather North'],
+
+// Pacific Rim
+['url' => 'https://www.pacificrim.news/feed/', 'category' => 'pacific_rim', 'name' => 'Pacific Rim News'],
+['url' => 'https://asiapacificreport.nz/feed/', 'category' => 'pacific_rim', 'name' => 'Asia Pacific Report'],
+['url' => 'https://www.eastasiaforum.org/feed/', 'category' => 'pacific_rim', 'name' => 'East Asia Forum'],
+['url' => 'https://www.pacificnewscenter.com/feed/', 'category' => 'pacific_rim', 'name' => 'Pacific News Center'],
+// Add these to your existing getKnownFeeds() array
+
+// Washington DC
+['url' => 'https://www.washingtonian.com/feed/', 'category' => 'dc_news', 'name' => 'Washingtonian'],
+['url' => 'https://dcist.com/feed/', 'category' => 'dc_news', 'name' => 'DCist'],
+['url' => 'https://www.popville.com/feed/', 'category' => 'dc_news', 'name' => 'PoPville'],
+['url' => 'https://www.washingtonpost.com/local/feed/', 'category' => 'dc_news', 'name' => 'Washington Post Local'],
+['url' => 'https://wamu.org/feed', 'category' => 'dc_news', 'name' => 'WAMU 88.5'],
+
+// Sacramento (CA Capital)
+['url' => 'https://www.sacbee.com/feed', 'category' => 'sacramento_news', 'name' => 'Sacramento Bee'],
+['url' => 'https://www.capradio.org/feed/', 'category' => 'sacramento_news', 'name' => 'Capital Public Radio'],
+['url' => 'https://www.abc10.com/feeds/rss.xml', 'category' => 'sacramento_news', 'name' => 'ABC10'],
+['url' => 'https://www.newsreview.com/sacramento/feed/', 'category' => 'sacramento_news', 'name' => 'Sacramento News & Review'],
+
+// Albany (NY Capital)
+['url' => 'https://www.timesunion.com/feed/', 'category' => 'albany_news', 'name' => 'Times Union'],
+['url' => 'https://www.news10.com/feed/', 'category' => 'albany_news', 'name' => 'NEWS10 ABC'],
+['url' => 'https://www.wamc.org/feed/', 'category' => 'albany_news', 'name' => 'WAMC'],
+['url' => 'https://dailygazette.com/feed/', 'category' => 'albany_news', 'name' => 'The Daily Gazette'],
+
+// Austin (TX Capital)
+['url' => 'https://www.statesman.com/feed/', 'category' => 'austin_news', 'name' => 'Austin American-Statesman'],
+['url' => 'https://www.kut.org/rss', 'category' => 'austin_news', 'name' => 'KUT Austin'],
+['url' => 'https://www.austinchronicle.com/feed/', 'category' => 'austin_news', 'name' => 'Austin Chronicle'],
+['url' => 'https://austonia.com/feed', 'category' => 'austin_news', 'name' => 'Austonia'],
+
+// Boston (MA Capital)
+['url' => 'https://www.bostonglobe.com/rss/metro', 'category' => 'boston_news', 'name' => 'Boston Globe Metro'],
+['url' => 'https://www.wbur.org/feed', 'category' => 'boston_news', 'name' => 'WBUR'],
+['url' => 'https://www.universalhub.com/feed', 'category' => 'boston_news', 'name' => 'Universal Hub'],
+['url' => 'https://www.bostonherald.com/feed/', 'category' => 'boston_news', 'name' => 'Boston Herald'],
+
+// Atlanta (GA Capital)
+['url' => 'https://www.ajc.com/feed', 'category' => 'atlanta_news', 'name' => 'Atlanta Journal-Constitution'],
+['url' => 'https://www.wabe.org/feed/', 'category' => 'atlanta_news', 'name' => 'WABE'],
+['url' => 'https://www.atlantamagazine.com/feed/', 'category' => 'atlanta_news', 'name' => 'Atlanta Magazine'],
+['url' => 'https://saportareport.com/feed/', 'category' => 'atlanta_news', 'name' => 'Saporta Report'],
+
+// Denver (CO Capital)
+['url' => 'https://www.denverpost.com/feed/', 'category' => 'denver_news', 'name' => 'Denver Post'],
+['url' => 'https://www.cpr.org/feed/', 'category' => 'denver_news', 'name' => 'Colorado Public Radio'],
+['url' => 'https://denverite.com/feed/', 'category' => 'denver_news', 'name' => 'Denverite'],
+['url' => 'https://www.westword.com/feed', 'category' => 'denver_news', 'name' => 'Westword'],
+
+// Phoenix (AZ Capital)
+['url' => 'https://www.azcentral.com/feed/', 'category' => 'phoenix_news', 'name' => 'Arizona Republic'],
+['url' => 'https://kjzz.org/feed/', 'category' => 'phoenix_news', 'name' => 'KJZZ'],
+['url' => 'https://www.phoenixnewtimes.com/feed', 'category' => 'phoenix_news', 'name' => 'Phoenix New Times'],
+['url' => 'https://frontdoorsmedia.com/feed/', 'category' => 'phoenix_news', 'name' => 'Front Doors News'],
+
+// Lansing (MI Capital)
+['url' => 'https://www.lansingstatejournal.com/feed/', 'category' => 'lansing_news', 'name' => 'Lansing State Journal'],
+['url' => 'https://www.wkar.org/feed/', 'category' => 'lansing_news', 'name' => 'WKAR'],
+['url' => 'https://www.wilx.com/rss/', 'category' => 'lansing_news', 'name' => 'WILX News'],
+['url' => 'https://www.cityoflansingmi.com/rss.aspx', 'category' => 'lansing_news', 'name' => 'City of Lansing'],
+
+// Madison (WI Capital)
+['url' => 'https://madison.com/news/local/feed/', 'category' => 'madison_news', 'name' => 'Wisconsin State Journal'],
+['url' => 'https://www.wpr.org/rss', 'category' => 'madison_news', 'name' => 'Wisconsin Public Radio'],
+['url' => 'https://isthmus.com/feed/', 'category' => 'madison_news', 'name' => 'Isthmus'],
+['url' => 'https://www.channel3000.com/feed/', 'category' => 'madison_news', 'name' => 'Channel 3000'],
+
+// Columbus (OH Capital)
+['url' => 'https://www.dispatch.com/feed/', 'category' => 'columbus_news', 'name' => 'Columbus Dispatch'],
+['url' => 'https://www.wosu.org/feed/', 'category' => 'columbus_news', 'name' => 'WOSU'],
+['url' => 'https://www.columbusunderground.com/feed/', 'category' => 'columbus_news', 'name' => 'Columbus Underground'],
+['url' => 'https://614now.com/feed/', 'category' => 'columbus_news', 'name' => '614NOW'],
+
+// Salem (OR Capital)
+['url' => 'https://www.statesmanjournal.com/feed/', 'category' => 'salem_news', 'name' => 'Statesman Journal'],
+['url' => 'https://www.salemreporter.com/feed/', 'category' => 'salem_news', 'name' => 'Salem Reporter'],
+['url' => 'https://www.opb.org/rss/regions/salem/', 'category' => 'salem_news', 'name' => 'OPB Salem'],
+['url' => 'https://www.salemnews.com/feed/', 'category' => 'salem_news', 'name' => 'Salem News'],
+
+// Harrisburg (PA Capital)
+['url' => 'https://www.pennlive.com/arc/outboundfeeds/rss/?outputType=xml', 'category' => 'harrisburg_news', 'name' => 'PennLive'],
+['url' => 'https://www.witf.org/feed/', 'category' => 'harrisburg_news', 'name' => 'WITF'],
+['url' => 'https://www.abc27.com/feed/', 'category' => 'harrisburg_news', 'name' => 'ABC27'],
+['url' => 'https://www.TheBurg.com/feed/', 'category' => 'harrisburg_news', 'name' => 'TheBurg'],
+// New York City
+['url' => 'https://www.nytimes.com/services/xml/rss/nyt/NYRegion.xml', 'category' => 'nyc_news', 'name' => 'NY Times Metro'],
+['url' => 'https://gothamist.com/feed', 'category' => 'nyc_news', 'name' => 'Gothamist'],
+['url' => 'https://www.thecity.nyc/rss/', 'category' => 'nyc_news', 'name' => 'The City'],
+['url' => 'https://www.amny.com/feed/', 'category' => 'nyc_news', 'name' => 'amNY'],
+['url' => 'https://www.villagevoice.com/feed/', 'category' => 'nyc_news', 'name' => 'Village Voice'],
+
+// Los Angeles
+['url' => 'https://www.latimes.com/local/rss2.0.xml', 'category' => 'la_news', 'name' => 'LA Times Local'],
+['url' => 'https://laist.com/feed', 'category' => 'la_news', 'name' => 'LAist'],
+['url' => 'https://www.lamag.com/feed/', 'category' => 'la_news', 'name' => 'Los Angeles Magazine'],
+['url' => 'https://www.laweekly.com/feed/', 'category' => 'la_news', 'name' => 'LA Weekly'],
+
+// Chicago
+['url' => 'https://www.chicagotribune.com/arcio/rss/category/news/', 'category' => 'chicago_news', 'name' => 'Chicago Tribune'],
+['url' => 'https://blockclubchicago.org/feed/', 'category' => 'chicago_news', 'name' => 'Block Club Chicago'],
+['url' => 'https://www.wbez.org/feed', 'category' => 'chicago_news', 'name' => 'WBEZ'],
+['url' => 'https://chicago.suntimes.com/feed', 'category' => 'chicago_news', 'name' => 'Chicago Sun-Times'],
+
+// San Francisco
+['url' => 'https://www.sfchronicle.com/feed/local', 'category' => 'sf_news', 'name' => 'SF Chronicle'],
+['url' => 'https://www.sfgate.com/feed/rss/', 'category' => 'sf_news', 'name' => 'SFGate'],
+['url' => 'https://missionlocal.org/feed/', 'category' => 'sf_news', 'name' => 'Mission Local'],
+['url' => 'https://www.sfweekly.com/feed/', 'category' => 'sf_news', 'name' => 'SF Weekly'],
+
+// Houston
+['url' => 'https://www.houstonchronicle.com/feed/local', 'category' => 'houston_news', 'name' => 'Houston Chronicle'],
+['url' => 'https://www.houstonpublicmedia.org/feed/', 'category' => 'houston_news', 'name' => 'Houston Public Media'],
+['url' => 'https://www.houstonia.com/feed/', 'category' => 'houston_news', 'name' => 'Houstonia'],
+['url' => 'https://www.houstonpress.com/feed', 'category' => 'houston_news', 'name' => 'Houston Press'],
+
+// Philadelphia
+['url' => 'https://www.inquirer.com/feed', 'category' => 'philly_news', 'name' => 'Philadelphia Inquirer'],
+['url' => 'https://billypenn.com/feed/', 'category' => 'philly_news', 'name' => 'Billy Penn'],
+['url' => 'https://whyy.org/feed/', 'category' => 'philly_news', 'name' => 'WHYY'],
+['url' => 'https://www.phillyvoice.com/rss/', 'category' => 'philly_news', 'name' => 'PhillyVoice'],
+
+// Miami
+['url' => 'https://www.miamiherald.com/news/local/feed/', 'category' => 'miami_news', 'name' => 'Miami Herald'],
+['url' => 'https://www.wlrn.org/rss', 'category' => 'miami_news', 'name' => 'WLRN'],
+['url' => 'https://www.miaminewtimes.com/feed', 'category' => 'miami_news', 'name' => 'Miami New Times'],
+['url' => 'https://www.thenextmiami.com/feed/', 'category' => 'miami_news', 'name' => 'The Next Miami'],
+
+// Seattle
+['url' => 'https://www.seattletimes.com/feed/', 'category' => 'seattle_news', 'name' => 'Seattle Times'],
+['url' => 'https://www.thestranger.com/feed', 'category' => 'seattle_news', 'name' => 'The Stranger'],
+['url' => 'https://www.kuow.org/rss', 'category' => 'seattle_news', 'name' => 'KUOW']
     
     
   
